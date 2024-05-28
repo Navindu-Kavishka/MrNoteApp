@@ -1,11 +1,7 @@
 package com.example.mrnoteapp
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.example.mrnoteapp.database.NoteDatabase
 import com.example.mrnoteapp.repository.NoteRepository
