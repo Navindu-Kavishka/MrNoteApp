@@ -4,10 +4,10 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mrnoteapp.model.Note
-import com.example.mrnoteapp.repository.NoreRepository
+import com.example.mrnoteapp.repository.NoteRepository
 import kotlinx.coroutines.launch
 
-class NoteViewModel(app: Application, private val noteRepository: NoreRepository): AndroidViewModel(app) {
+class NoteViewModel(app: Application, private val noteRepository: NoteRepository): AndroidViewModel(app) {
 
     fun addNote(note: Note) =
         viewModelScope.launch {

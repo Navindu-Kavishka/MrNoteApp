@@ -3,7 +3,7 @@ package com.example.mrnoteapp.repository
 import com.example.mrnoteapp.database.NoteDatabase
 import com.example.mrnoteapp.model.Note
 
-class NoreRepository(private val db: NoteDatabase) {
+class NoteRepository(private val db: NoteDatabase) {
 
     suspend fun insertNote(note: Note) = db.getNoteDao().insertNote(note)
     suspend fun deleteNote(note: Note) = db.getNoteDao().deleteNote(note)
